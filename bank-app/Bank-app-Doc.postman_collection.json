@@ -1,0 +1,2998 @@
+{
+	"info": {
+		"_postman_id": "dbeb0358-f816-481c-920a-0d1651d0a661",
+		"name": "Api Documentation",
+		"description": "Api Documentation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "auth",
+					"item": [
+						{
+							"name": "authenticateUser",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"password\": \"officia deserunt tempor in\",\n    \"username\": \"esse\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/auth/signin",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"auth",
+										"signin"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"password\": \"officia deserunt tempor in\",\n    \"username\": \"esse\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/auth/signin",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"auth",
+												"signin"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"password\": \"officia deserunt tempor in\",\n    \"username\": \"esse\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/auth/signin",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"auth",
+												"signin"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"password\": \"officia deserunt tempor in\",\n    \"username\": \"esse\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/auth/signin",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"auth",
+												"signin"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"password\": \"officia deserunt tempor in\",\n    \"username\": \"esse\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/auth/signin",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"auth",
+												"signin"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"password\": \"officia deserunt tempor in\",\n    \"username\": \"esse\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/auth/signin",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"auth",
+												"signin"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "registerUser",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"incididunt sed velit eu quis\",\n    \"firstName\": \"ipsum nisi pariatur\",\n    \"middleName\": \"laboris tempor\",\n    \"password\": \"ea et fugiat voluptate labore\",\n    \"secondName\": \"tempor\",\n    \"username\": \"in consequat ex\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/auth/signup",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"auth",
+										"signup"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"incididunt sed velit eu quis\",\n    \"firstName\": \"ipsum nisi pariatur\",\n    \"middleName\": \"laboris tempor\",\n    \"password\": \"ea et fugiat voluptate labore\",\n    \"secondName\": \"tempor\",\n    \"username\": \"in consequat ex\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/auth/signup",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"auth",
+												"signup"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"incididunt sed velit eu quis\",\n    \"firstName\": \"ipsum nisi pariatur\",\n    \"middleName\": \"laboris tempor\",\n    \"password\": \"ea et fugiat voluptate labore\",\n    \"secondName\": \"tempor\",\n    \"username\": \"in consequat ex\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/auth/signup",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"auth",
+												"signup"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"incididunt sed velit eu quis\",\n    \"firstName\": \"ipsum nisi pariatur\",\n    \"middleName\": \"laboris tempor\",\n    \"password\": \"ea et fugiat voluptate labore\",\n    \"secondName\": \"tempor\",\n    \"username\": \"in consequat ex\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/auth/signup",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"auth",
+												"signup"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"incididunt sed velit eu quis\",\n    \"firstName\": \"ipsum nisi pariatur\",\n    \"middleName\": \"laboris tempor\",\n    \"password\": \"ea et fugiat voluptate labore\",\n    \"secondName\": \"tempor\",\n    \"username\": \"in consequat ex\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/auth/signup",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"auth",
+												"signup"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"email\": \"incididunt sed velit eu quis\",\n    \"firstName\": \"ipsum nisi pariatur\",\n    \"middleName\": \"laboris tempor\",\n    \"password\": \"ea et fugiat voluptate labore\",\n    \"secondName\": \"tempor\",\n    \"username\": \"in consequat ex\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/auth/signup",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"auth",
+												"signup"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "card",
+					"item": [
+						{
+							"name": "getMyCards",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/card?name=sunt elit dolore",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"card"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "sunt elit dolore"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/card?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/card?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/card?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/card?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "rebuildCard",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/card/rebuild/:number?name=sunt elit dolore",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"card",
+										"rebuild",
+										":number"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "sunt elit dolore"
+										}
+									],
+									"variable": [
+										{
+											"key": "number",
+											"value": "sunt elit dolore",
+											"type": "string",
+											"description": "(Required) number"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/card/rebuild/:number?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card",
+												"rebuild",
+												":number"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "number"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/card/rebuild/:number?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card",
+												"rebuild",
+												":number"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "number"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/card/rebuild/:number?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card",
+												"rebuild",
+												":number"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "number"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/card/rebuild/:number?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card",
+												"rebuild",
+												":number"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "number"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/card/rebuild/:number?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card",
+												"rebuild",
+												":number"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "number"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "transfer",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"amount\": 30244296.592695758,\n    \"cardNumberFrom\": \"culpa non officia adipisicing\",\n    \"cardNumberTo\": \"consectetu\",\n    \"type\": \"minim aute aliquip dolore laboris\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/card/transfer?name=sunt elit dolore",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"card",
+										"transfer"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "sunt elit dolore"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"amount\": 30244296.592695758,\n    \"cardNumberFrom\": \"culpa non officia adipisicing\",\n    \"cardNumberTo\": \"consectetu\",\n    \"type\": \"minim aute aliquip dolore laboris\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/card/transfer?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card",
+												"transfer"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"amount\": 30244296.592695758,\n    \"cardNumberFrom\": \"culpa non officia adipisicing\",\n    \"cardNumberTo\": \"consectetu\",\n    \"type\": \"minim aute aliquip dolore laboris\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/card/transfer?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card",
+												"transfer"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"amount\": 30244296.592695758,\n    \"cardNumberFrom\": \"culpa non officia adipisicing\",\n    \"cardNumberTo\": \"consectetu\",\n    \"type\": \"minim aute aliquip dolore laboris\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/card/transfer?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card",
+												"transfer"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"amount\": 30244296.592695758,\n    \"cardNumberFrom\": \"culpa non officia adipisicing\",\n    \"cardNumberTo\": \"consectetu\",\n    \"type\": \"minim aute aliquip dolore laboris\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/card/transfer?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card",
+												"transfer"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"amount\": 30244296.592695758,\n    \"cardNumberFrom\": \"culpa non officia adipisicing\",\n    \"cardNumberTo\": \"consectetu\",\n    \"type\": \"minim aute aliquip dolore laboris\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/card/transfer?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card",
+												"transfer"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "createCard",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/card/:currency?name=sunt elit dolore",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"card",
+										":currency"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "sunt elit dolore"
+										}
+									],
+									"variable": [
+										{
+											"key": "currency",
+											"value": "sunt elit dolore",
+											"type": "string",
+											"description": "(Required) currency"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/card/:currency?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card",
+												":currency"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "currency"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/card/:currency?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card",
+												":currency"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "currency"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/card/:currency?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card",
+												":currency"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "currency"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/card/:currency?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card",
+												":currency"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "currency"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/card/:currency?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card",
+												":currency"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "currency"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "deleteCard",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/card/:number?name=sunt elit dolore",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"card",
+										":number"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "sunt elit dolore"
+										}
+									],
+									"variable": [
+										{
+											"key": "number",
+											"value": "sunt elit dolore",
+											"type": "string",
+											"description": "(Required) number"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/card/:number?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card",
+												":number"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "number"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/card/:number?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card",
+												":number"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "number"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/card/:number?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card",
+												":number"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "number"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/card/:number?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"card",
+												":number"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "number"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "contribution",
+					"item": [
+						{
+							"name": "getContributions",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/contribution?name=sunt elit dolore",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"contribution"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "sunt elit dolore"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/contribution?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contribution"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/contribution?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contribution"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/contribution?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contribution"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/contribution?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contribution"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "createContribution",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"amount\": -94386853.6625307,\n    \"card\": \"exerci\",\n    \"date\": \"1994-02-04T06:09:42.706Z\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/contribution/create?name=sunt elit dolore",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"contribution",
+										"create"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "sunt elit dolore"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"amount\": -94386853.6625307,\n    \"card\": \"exerci\",\n    \"date\": \"1994-02-04T06:09:42.706Z\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/contribution/create?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contribution",
+												"create"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"amount\": -94386853.6625307,\n    \"card\": \"exerci\",\n    \"date\": \"1994-02-04T06:09:42.706Z\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/contribution/create?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contribution",
+												"create"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"amount\": -94386853.6625307,\n    \"card\": \"exerci\",\n    \"date\": \"1994-02-04T06:09:42.706Z\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/contribution/create?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contribution",
+												"create"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"amount\": -94386853.6625307,\n    \"card\": \"exerci\",\n    \"date\": \"1994-02-04T06:09:42.706Z\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/contribution/create?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contribution",
+												"create"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"amount\": -94386853.6625307,\n    \"card\": \"exerci\",\n    \"date\": \"1994-02-04T06:09:42.706Z\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/contribution/create?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contribution",
+												"create"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "calculateProfit",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"endDate\": \"2000-11-27T00:06:50.474Z\",\n    \"startDate\": \"1982-09-21T01:46:58.867Z\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/contribution/profit",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"contribution",
+										"profit"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"endDate\": \"2000-11-27T00:06:50.474Z\",\n    \"startDate\": \"1982-09-21T01:46:58.867Z\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/contribution/profit",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contribution",
+												"profit"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"endDate\": \"2000-11-27T00:06:50.474Z\",\n    \"startDate\": \"1982-09-21T01:46:58.867Z\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/contribution/profit",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contribution",
+												"profit"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"endDate\": \"2000-11-27T00:06:50.474Z\",\n    \"startDate\": \"1982-09-21T01:46:58.867Z\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/contribution/profit",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contribution",
+												"profit"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"endDate\": \"2000-11-27T00:06:50.474Z\",\n    \"startDate\": \"1982-09-21T01:46:58.867Z\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/contribution/profit",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contribution",
+												"profit"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"endDate\": \"2000-11-27T00:06:50.474Z\",\n    \"startDate\": \"1982-09-21T01:46:58.867Z\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/contribution/profit",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contribution",
+												"profit"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "takeContribution",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"card\": \"nulla ea\",\n    \"contribution\": \"reprehenderit non\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/contribution/take?name=sunt elit dolore",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"contribution",
+										"take"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "sunt elit dolore"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"card\": \"nulla ea\",\n    \"contribution\": \"reprehenderit non\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/contribution/take?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contribution",
+												"take"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"card\": \"nulla ea\",\n    \"contribution\": \"reprehenderit non\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/contribution/take?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contribution",
+												"take"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"card\": \"nulla ea\",\n    \"contribution\": \"reprehenderit non\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/contribution/take?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contribution",
+												"take"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"card\": \"nulla ea\",\n    \"contribution\": \"reprehenderit non\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/contribution/take?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contribution",
+												"take"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"card\": \"nulla ea\",\n    \"contribution\": \"reprehenderit non\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/contribution/take?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"contribution",
+												"take"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "statistic",
+					"item": [
+						{
+							"name": "getCardDeposits",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/statistic/deposits/:card?name=sunt elit dolore",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"statistic",
+										"deposits",
+										":card"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "sunt elit dolore"
+										}
+									],
+									"variable": [
+										{
+											"key": "card",
+											"value": "sunt elit dolore",
+											"type": "string",
+											"description": "(Required) card"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/statistic/deposits/:card?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"statistic",
+												"deposits",
+												":card"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "card"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/statistic/deposits/:card?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"statistic",
+												"deposits",
+												":card"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "card"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/statistic/deposits/:card?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"statistic",
+												"deposits",
+												":card"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "card"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/statistic/deposits/:card?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"statistic",
+												"deposits",
+												":card"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "card"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "getCardExpenses",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/statistic/expenses/:card?name=sunt elit dolore",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"statistic",
+										"expenses",
+										":card"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "sunt elit dolore"
+										}
+									],
+									"variable": [
+										{
+											"key": "card",
+											"value": "sunt elit dolore",
+											"type": "string",
+											"description": "(Required) card"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/statistic/expenses/:card?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"statistic",
+												"expenses",
+												":card"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "card"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/statistic/expenses/:card?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"statistic",
+												"expenses",
+												":card"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "card"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/statistic/expenses/:card?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"statistic",
+												"expenses",
+												":card"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "card"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/statistic/expenses/:card?name=sunt elit dolore",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"statistic",
+												"expenses",
+												":card"
+											],
+											"query": [
+												{
+													"key": "name",
+													"value": "sunt elit dolore"
+												}
+											],
+											"variable": [
+												{
+													"key": "card"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "getAllowedCurrency",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/currency",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"currency"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/currency",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"currency"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/currency",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"currency"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/currency",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"currency"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/currency",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"currency"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "getTransactionTypes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/transaction/types",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"transaction",
+								"types"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/transaction/types",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"transaction",
+										"types"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/transaction/types",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"transaction",
+										"types"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/transaction/types",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"transaction",
+										"types"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/transaction/types",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"transaction",
+										"types"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmYWRlc21sIiwiaWF0IjoxNjE3MDAzODg4LCJleHAiOjE2MTcwOTAyODh9.2z46FW1bmNImALXG8yQRppSX8AtKHXAL7cgadp7o4nFV52j_wRyCA-wAYNWu8w3VAfT3rHCd0ezB8LJJ9k4uVA",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "localhost:8090"
+		}
+	]
+}
